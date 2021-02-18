@@ -141,10 +141,12 @@ input:checked + .slider:before{
 .services .services-par{
     color:var(--logo-color);
     font-weight: 700;
+    margin-top: 50px;
 }
 .card{
     height:333px;
     width: 270px;
+    border: 0;
 }
 .card img{
     width: 40%;
