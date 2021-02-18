@@ -100,7 +100,7 @@ input:checked + .slider:before{
 .first-section{
     overflow: hidden;
     /* height: 100vh; */
-    background-color: var(--section-background);
+    /* background-color: var(--section-background); */
 }
 .first-section .f-info{
     /* width: 50%;
@@ -132,3 +132,23 @@ input:checked + .slider:before{
     top: -75px; */
 }
 /**End First Section*/
+
+/** Start services Section*/
+.services{
+    background-color: var(--section-background);
+    margin-top: 100px;
+}
+.services .services-par{
+    color:var(--logo-color);
+    font-weight: 700;
+}
+.card{
+    height:333px;
+    width: 270px;
+}
+.card img{
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+}
+/** End services Section*/
