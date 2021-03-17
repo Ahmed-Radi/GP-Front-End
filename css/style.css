@@ -20,9 +20,13 @@
     margin:0;
 }
 /**Strat Navbar*/
-.navbar{height: 90px;background-color:#fff !important;}
+.navbar{z-index: 1;position: fixed;width: 100%;}
+.bg-light{background-color:#fff !important;}/*bootstrap class*/
 .nav-link{padding: 8px 60px;}
-.navbar-expand-lg .navbar-nav .nav-link.active{color: var(--nav-hover-color);}
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link{color: var(--nav-hover-color);}
 .navbar .navbar-brand{color:var(--nav-second-color);font-family:var(--logo-font);}
 .navbar .logo-nav{color:var(--logo-color);font-weight: bold;}
 /*Start NavBar Animation*/
@@ -99,8 +103,9 @@ input:checked + .slider:before{
 /**Start First Section*/
 .first-section{
     overflow: hidden;
-    /* height: 100vh; */
-    /* background-color: var(--section-background); */
+    background-image: url('../img/Path 1361.png');
+    background-repeat: no-repeat;
+    background-position: 442px -35px;
 }
 .first-section .f-info{
     /* width: 50%;
