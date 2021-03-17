@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Permanent+Marker&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <!-- Google fonts -->
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
     <link rel="stylesheet" href="./css/style.css">
     <title>ONLINEexam</title>
 </head>
@@ -92,21 +95,21 @@
                 </div>
                 <div class="services-cards text-center">
                     <div class="row justify-content-center align-items-center">
-                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2">
+                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2"  data-aos="flip-left" data-aos-duration="2000">
                             <img class="card-img-top" src="./img/icon/Register Your Courses.svg" alt="Card image cap">
                             <div class="card-body">
                                 <h6>Register Your Courses</h6>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
-                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2">
+                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2" data-aos="fade-up" data-aos-duration="2000">
                             <img class="card-img-top" src="./img/icon/Take your exam.svg" alt="Card image cap">
                             <div class="card-body">
                                 <h6>Take your exam</h6>
                                 <p class="card-text">Register for your subjects to take the exam.</p>
                             </div>
                         </div>
-                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2">
+                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2"  data-aos="flip-right" data-aos-duration="2000">
                             <img class="" src="./img/icon/Highly Interactive Interface.svg" alt="Card image cap">
                             <div class="card-body">
                                 <h6>Highly Interactive Interface</h6>
@@ -114,21 +117,21 @@
                             </div>
                         </div>
                         <!-- second row -->
-                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2">
+                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2" data-aos="zoom-out-down" data-aos-duration="2000">
                             <img class="" src="./img/icon/Get the result.svg" alt="Card image cap">
                             <div class="card-body">
                                 <h6>Get the result</h6>
                                 <p class="card-text">The doctor publishes the result after according to the total score.</p>
                             </div>
                         </div>
-                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2">
+                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <img class="" src="./img/icon/Exam system.svg" alt="Card image cap">
                             <div class="card-body">
                                 <h6>Exam system</h6>
                                 <p class="card-text">The exam date is predefined and each question has a specific time.</p>
                             </div>
                         </div>
-                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2">
+                        <div class="card col-md-4 col-lg-3 col-sm-4 m-2" data-aos="zoom-out-down" data-aos-duration="2000">
                             <img class="" src="./img/icon/Security.svg" alt="Card image cap">
                             <div class="card-body">
                                 <h6>Security</h6>
@@ -144,11 +147,17 @@
 
 
     <!-- Scripts -->
-        <script src="./javascript/javascript.js"></script>
         <!-- Bootstrap -->
         <script src="./JQuery/JQuery.js"></script>
         <script src="./javascript/bootstrap.js"></script>
         <!-- Bootstrap -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS -->
+            <script src="./javascript/javascript.js"></script>
     <!-- Scripts -->
 </body>
 </html>
