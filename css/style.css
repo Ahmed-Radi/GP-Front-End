@@ -15,37 +15,31 @@
     --section-background:#FBFCFD;
 }
 /**Root*/
+*{
+    padding:0;
+    margin:0;
+}
 /**Strat Navbar*/
-.navbar{height: 90px;}
+.navbar{z-index: 1;position: fixed;width: 100%;}
+.bg-light{background-color:#fff !important;}/*bootstrap class*/
 .nav-link{padding: 8px 60px;}
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .nav-link{
-    padding: 23px;
-    font-size: 18px;
-    font-weight: 700;
-    color:var(--nav-text-color)
-}
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .nav-link.active{
-    color: var(--nav-hover-color);
-}
+.navbar-light .navbar-nav .nav-link{color: var(--nav-hover-color);}
 .navbar .navbar-brand{color:var(--nav-second-color);font-family:var(--logo-font);}
 .navbar .logo-nav{color:var(--logo-color);font-weight: bold;}
-/**Start NavBar Animation*/
+/*Start NavBar Animation*/
 .navbar-expand-lg .navbar-nav{margin-right:65px;}
 .navbar-expand-lg .navbar-nav .nav-link{
-    color:#000;
+    font-size: 18px;
+    font-weight: 700;
+    color:var(--nav-text-color);
     font-family: var(--main-font);
     display: inline-block;
     position: relative;
-    padding-left: 34px;
-    padding-right: 20px;
+    padding: 23px;
 }
-.navbar-expand-lg .navbar-nav .nav-link.disabled{color:rgb(190, 190, 190);}
 .navbar-expand-lg .navbar-nav .nav-link::after{
     content: '';
     display: block;
@@ -60,10 +54,11 @@
     z-index: 1;
     transform: translateX(0%) scaleX(1);
 }
-/**End NavBar Animation*/
-.language{font-weight: 700;font-family: var(--main-font);}
+.navbar-collapse{z-index: 1;background-color: #fff;}/*Make navbar when collapsed have background color white*/
+/*End NavBar Animation*/
 .nav-switch{position: relative;top:22.5px;} /*in small screnn top: 6px;*/
-/**Swith Button*/
+.language{font-weight: 700;font-family: var(--main-font);}
+/*Swith Button*/
 .switch {
     position: relative;
     display: inline-block;
@@ -102,7 +97,65 @@ input:checked + .slider:before{
 }
 .slider.round{border-radius: 34px;}
 .slider.round:before{border-radius: 50%;}
-/**End Swith Style*/
-
+/*End Swith Style*/
 /**End Navbar*/
 
+/**Start First Section*/
+.first-section{
+    overflow: hidden;
+    background-image: url('../img/Path 1361.png');
+    background-repeat: no-repeat;
+    background-position: 442px -35px;
+}
+.first-section .f-info{
+    /* width: 50%;
+    float: left; */
+}
+.first-section .f-info .inner-info{
+    margin-top: 183px;
+    /* width: 70%; */
+}
+.first-section .f-info .inner-info p{
+    /* margin-top: 5px; */
+}
+.first-section .f-info .inner-info button{
+    height: 40px;
+    width: 130px;
+    border-radius: 30px;
+    border: none;
+    background-color:#3D37F1;
+    color: #F9F9FF;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.first-section .f-img{
+    /* width: 50%;
+    float: left; */
+}
+.first-section .f-img img{
+    /* position: relative;
+    top: -75px; */
+}
+/**End First Section*/
+
+/** Start services Section*/
+.services{
+    background-color: var(--section-background);
+    margin-top: 100px;
+}
+.services .services-par{
+    color:var(--logo-color);
+    font-weight: 700;
+    margin-top: 50px;
+}
+.card{
+    height:333px;
+    width: 270px;
+    border: 0;
+}
+.card img{
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+}
+/** End services Section*/
