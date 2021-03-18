@@ -19,8 +19,29 @@
     padding:0;
     margin:0;
 }
+
+/**Start Navbar Scroll*/
+.smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.5s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.5s ease-in-out;
+}
+/**End Navbar Scroll*/
+
 /**Strat Navbar*/
-.navbar{z-index: 1;position: fixed;width: 100%;}
+.navbar{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
 .bg-light{background-color:#fff !important;}/*bootstrap class*/
 .nav-link{padding: 8px 60px;}
 .navbar-light .navbar-nav .show > .nav-link,
