@@ -145,6 +145,7 @@ input:checked + .slider:before{
     background-color: var(--section-background);
     padding-top: 100px;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 .services .services-text{margin-bottom: 30px}
 .services .services-par{
@@ -178,14 +179,33 @@ input:checked + .slider:before{
 .features .features-p{padding-top:5px;padding-bottom:17px;}
 /* End Features Section */
 
-
+/* Start Footer Section */
+.footer svg{
+    width:55px;
+    height: 43px;
+    display: inline-block;
+}
+.footer-logo .google-svg-circle,
+.facebook-svg{
+    fill: #0A315A;
+}
+.footer-logo .google-svg-circle:hover,
+path:hover.google-svg-circle{
+    fill: #DC4E41;
+}
+.facebook-svg:hover{
+    fill: #3B5998;
+}
+/* End Footer Section */
 
 /**card*/
 .card{
-    height:333px;
     width: calc(150% / 2);
     border: 0;
     border-radius:10px;
+}
+.card-height {
+    height:333px;
 }
 .card-img{
     width: 40%;
