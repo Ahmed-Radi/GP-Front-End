@@ -19,7 +19,6 @@
     padding:0;
     margin:0;
 }
-
 /**Start Navbar Scroll*/
 .smart-scroll{
     position: fixed;
@@ -28,12 +27,8 @@
     left: 0;
     z-index: 1030;
 }
-.scrolled-down{
-    transform:translateY(-100%); transition: all 0.5s ease-in-out;
-}
-.scrolled-up{
-    transform:translateY(0); transition: all 0.5s ease-in-out;
-}
+.scrolled-down{transform:translateY(-100%); transition: all 0.5s ease-in-out;}
+.scrolled-up{transform:translateY(0); transition: all 0.5s ease-in-out;}
 /**End Navbar Scroll*/
 
 /**Strat Navbar*/
@@ -77,7 +72,7 @@
 }
 .navbar-collapse{z-index: 1;background-color: #fff;}/*Make navbar when collapsed have background color white*/
 /*End NavBar Animation*/
-.nav-switch{position: relative;top:22.5px;} /*in small screnn top: 6px;*/
+.nav-switch{position: relative;top:22.5px;} /***in small screnn top: 6px;*/
 .language{font-weight: 700;font-family: var(--main-font);}
 /*Swith Button*/
 .switch {
@@ -123,48 +118,35 @@ input:checked + .slider:before{
 
 /**Start First Section*/
 .first-section{
+    min-height: 100vh;
     overflow: hidden;
     background-image: url('../img/Path 1361.png');
     background-repeat: no-repeat;
     background-position: 442px -35px;
 }
-.first-section .f-info{
-    /* width: 50%;
-    float: left; */
-}
 .first-section .f-info .inner-info{
-    margin-top: 183px;
-    /* width: 70%; */
+    margin-top: 253px;
 }
-.first-section .f-info .inner-info p{
-    /* margin-top: 5px; */
-}
+.first-section .f-info .inner-info p{margin-top: 10px;}
 .first-section .f-info .inner-info button{
     height: 40px;
     width: 130px;
     border-radius: 30px;
     border: none;
-    background-color:#3D37F1;
-    color: #F9F9FF;
+    background-color:var(--logo-color);
+    color: var(--section-background);
     font-weight: 500;
     text-transform: capitalize;
-}
-.first-section .f-img{
-    /* width: 50%;
-    float: left; */
-}
-.first-section .f-img img{
-    /* position: relative;
-    top: -75px; */
 }
 /**End First Section*/
 
 /** Start services Section*/
 .services{
     background-color: var(--section-background);
-    margin-top: 100px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
+.services .services-text{margin-bottom: 30px}
 .services .services-par{
     color:var(--logo-color);
     font-weight: 700;
@@ -191,10 +173,9 @@ input:checked + .slider:before{
     background-color: #fff;
     text-align: center;
     padding-bottom: 100px;
+    padding-top: 100px;
 }
-.features .info p{
-    padding-top:27px;
-}
+.features .features-p{padding-top:5px;padding-bottom:17px;}
 /* End Features Section */
 
 
@@ -202,7 +183,7 @@ input:checked + .slider:before{
 /**card*/
 .card{
     height:333px;
-    /* width: 270px; */
+    width: calc(150% / 2);
     border: 0;
     border-radius:10px;
 }
