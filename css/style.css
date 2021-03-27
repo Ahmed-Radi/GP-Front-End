@@ -16,6 +16,10 @@
     /*Footer*/
     --footer-color: #4B647E;
 }
+::selection{
+    background-color: var(--nav-hover-color);
+    color: var(--section-background);
+}
 /**Root*/
 *{
     padding:0;
