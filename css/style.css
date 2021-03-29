@@ -283,3 +283,33 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 }
 .last:last-child{margin-bottom: 100px;}
 /****Exam Page****/
+
+/*************************************/
+
+/****Student Courses Page****/
+.courses-main{padding-top: 90px;}
+.courses-main .courses-info{
+    width: 1000px;
+    margin-top: 56px;
+    padding: 20px;
+    border: 1px solid #9a9a9a38;
+    border-radius: 8px;
+    font-family: var(--main-font);
+    font-weight: bolder;
+    transition: 0.25s ease;
+}
+.courses-main .courses-info:hover{
+    box-shadow: 1px 3px 8px -1px var(--shadow-color);
+    cursor: pointer;
+}
+.courses-main .courses-info .subject-name,
+.courses-main .courses-info .subject-date,
+.courses-main .courses-info .subject-doctor{
+    width: 135px;
+    display: inline-block;
+    margin: calc((1000px - 580px)/12);/*1488px div width - 580px = 40px padding + 540px is total of widths for spans*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.last:last-child{margin-bottom: 100px;}
+/****Student Courses Page****/
