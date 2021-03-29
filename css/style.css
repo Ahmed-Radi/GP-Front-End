@@ -276,7 +276,9 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .exam-main .exam-info .subject-duration{
     width: 135px;
     display: inline-block;
-    margin-left: calc((1488px - 580px)/12);/*1488px div width - 580px = 40px padding + 540px is total of widths for spans*/
+    margin: calc((1488px - 580px)/12);/*1488px div width - 580px = 40px padding + 540px is total of widths for spans*/
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .last:last-child{margin-bottom: 100px;}
 /****Exam Page****/
