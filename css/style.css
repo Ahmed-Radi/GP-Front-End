@@ -16,6 +16,7 @@
     /*Footer*/
     --footer-color: #4B647E;
     --shadow-color: #0000003d;
+    --border-color: #9a9a9a38;
 }
 ::selection{
     background-color: var(--nav-hover-color);
@@ -260,7 +261,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     width: 1488px;
     margin-top: 56px;
     padding: 20px;
-    border: 1px solid var(--nav-text-color);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     font-family: var(--main-font);
     font-weight: bolder;
