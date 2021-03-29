@@ -292,7 +292,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     width: 1000px;
     margin-top: 56px;
     padding: 20px;
-    border: 1px solid #9a9a9a38;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     font-family: var(--main-font);
     font-weight: bolder;
