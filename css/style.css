@@ -258,8 +258,10 @@ input:checked + .slider:before{
 .exam-main{padding-top: 90px;}
 a.exam-info{display: block;color: var(--nav-text-color);}
 .exam-main .exam-info{
-    width: 1488px;
+    width: 100%;
     margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -276,12 +278,12 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .exam-main .exam-info .subject-time,
 .exam-main .exam-info .subject-duration{
     width: 135px;
-    display: inline-block;
-    margin: calc((1488px - 580px)/12);/*1488px div width - 580px = 40px padding + 540px is total of widths for spans*/
+    margin: 5px;
     margin-top: 0;
     margin-bottom: 0;
+    display: inline-block;
 }
-.last:last-child{margin-bottom: 100px;}
+.last{margin-bottom: 100px;}
 /****Exam Page****/
 
 /*************************************/
@@ -304,10 +306,10 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .courses-main .courses-info .subject-date,
 .courses-main .courses-info .subject-doctor{
     width: 135px;
-    display: inline-block;
-    margin: calc((100% - 180px)/6);/*1488px div width - 580px = 40px padding + 540px is total of widths for spans // 6 is the number of cols*/
+    margin: calc((100% - 180px)/6);/*6 is the number of cols*/
     margin-top: 0;
     margin-bottom: 0;
+    display: inline-block;
 }
 .last:last-child{margin-bottom: 100px;}
 /****Student Courses Page****/
