@@ -17,6 +17,7 @@
     --footer-color: #4B647E;
     --shadow-color: #0000003d;
     --border-color: #9a9a9a38;
+    --red-color: #e74343;
 }
 ::selection{
     background-color: var(--nav-hover-color);
@@ -82,6 +83,16 @@ a:hover{
     display: block;
     margin: auto;
 }
+/*DropDown list(Admin pages)*/
+.nav-item .nav-link.dropdown-toggle::after{
+    margin-left: 0;
+    content: "";
+    border: none;
+}
+.nav-item .nav-link.dropdown-toggle:hover .dropdown-menu{
+    background-color: red;
+}
+/*DropDown list(Admin pages)*/
 .navbar-expand-lg .navbar-nav .nav-link:hover::after{
     width: 100%;
     background: var(--nav-hover-color);
@@ -311,5 +322,80 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     margin-bottom: 0;
     display: inline-block;
 }
-.last:last-child{margin-bottom: 100px;}
+.last:last-child{margin-bottom: 100px;}/*this Shared between each of the course pages for the student and the teacher */
 /****Student Courses Page****/
+
+/*************************************/
+
+/****Teacher Courses Page****/
+/*Model*/
+.close-botton,
+.add-botton{
+    border-radius: 24px;
+    padding: 6px;
+    width: 100px;
+    background-color: var(--section-background);
+    border-color: var(--border-color);
+    transition: 0.4s ease;
+}
+#course-name,
+#course{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border:0;
+    border-bottom: 1px solid var(--border-color);
+    transition: 0.4s ease;
+}
+#course-name:focus,
+#course:focus{
+    border:0;
+    border-bottom: 1px solid var(--nav-hover-color);
+    outline: 0 none;
+}
+.close-botton:hover{
+    background-color: var(--nav-hover-color);
+    color: var(--section-background);
+}
+.add-botton:hover{
+    background-color: var(--red-color);
+    color: var(--section-background);
+}
+/*Model*/
+.teacher-courses-main{padding-top: 90px;}
+.teacher-courses-header{
+    width: 150px;
+    display: inline-block;
+}
+.add-course{
+    border-radius: 24px;
+    padding: 6px;
+    width: 130px;
+    background-color: var(--section-background);
+    border-color: var(--border-color);
+    transition: 0.4s ease;
+}
+.add-course:hover{
+    box-shadow: 1px 3px 8px -1px var(--shadow-color);
+}
+.teacher-courses-main .teacher-courses-info{
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+.teacher-courses-main .teacher-courses-info:hover{box-shadow: 1px 3px 8px -1px var(--shadow-color);}
+.teacher-courses-main .teacher-courses-info .teacher-subject-name,
+.teacher-courses-main .teacher-courses-info .teacher-subject-date,
+.teacher-courses-main .teacher-courses-info .teacher-subject-doctor{
+    width: 135px;
+    margin: calc((100% - 180px)/6);/*6 is the number of cols*/
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+}
+/****Teacher Courses Page****/
