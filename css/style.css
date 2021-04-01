@@ -306,7 +306,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .courses-main .courses-info .subject-date,
 .courses-main .courses-info .subject-doctor{
     width: 135px;
-    margin: calc((100% - 180px)/6);/*6 is the number of cols*/
+    margin: calc((100% - 40%)/12);/*6 is the number of cols*/
     margin-top: 0;
     margin-bottom: 0;
     display: inline-block;
