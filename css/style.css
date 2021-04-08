@@ -17,7 +17,8 @@
     --footer-color: #4B647E;
     --shadow-color: #0000003d;
     --border-color: #9a9a9a38;
-    --red-color: #e74343;
+    --red-color: #e74343; /*it for 'x' shap in link exam card*/
+    --green-color: #21ec0f;
 }
 ::selection{
     background-color: var(--nav-hover-color);
@@ -322,10 +323,12 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     margin-bottom: 0;
     display: inline-block;
 }
-.last:last-child{margin-bottom: 100px;}/*this Shared between each of the course pages for the student and the teacher */
+.last:last-child{margin-bottom: 100px;}/*this Shared between each of the course and exam pages for the student and the teacher */
 /****Student Courses Page****/
 
 /*************************************/
+
+/**************** Teacher *********************/
 
 /****Teacher Courses Page****/
 /*Model*/
@@ -392,10 +395,60 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .teacher-courses-main .teacher-courses-info .teacher-subject-name,
 .teacher-courses-main .teacher-courses-info .teacher-subject-date,
 .teacher-courses-main .teacher-courses-info .teacher-subject-doctor{
-    width: 135px;
+    width: 155px;
     margin: calc((100% - 180px)/6);/*6 is the number of cols*/
     margin-top: 0;
     margin-bottom: 0;
     display: inline-block;
 }
 /****Teacher Courses Page****/
+
+/****Teacher Exam links Page****/
+.exam-link-teacher-main{padding-top: 90px;}
+.exam-link-teacher-main input{ /*It appears when you click on the Modify button, and in it, the values in the span are added to the input so that the user can modify the values*/
+    width: 135px;
+}
+a.exam-info{display: block;color: var(--nav-text-color);}
+.exam-link-teacher-main .exam-info{
+    width: 100%;
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+.exam-link-teacher-main .exam-info:hover{
+    box-shadow: 1px 3px 8px -1px var(--shadow-color);
+}
+.exam-link-teacher-main .exam-info .subject-name,
+.exam-link-teacher-main .exam-info .subject-date,
+.exam-link-teacher-main .exam-info .subject-time,
+.exam-link-teacher-main .exam-info .subject-duration{
+    width: 110px;
+    margin: 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+}
+.exam-link-teacher-main .exam-info .subject-name{
+    width: 132px;
+}
+.exam-link-teacher-main i{
+    transition: 0.45s ease;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.exam-link-teacher-main i.edit:hover{
+    color: var(--nav-hover-color);
+}
+.exam-link-teacher-main i.remove:hover{
+    color: var(--red-color);
+}
+.green-color:hover{/* for icon save */
+    color: var(--green-color);
+}
+/****Teacher Exam links Page****/
