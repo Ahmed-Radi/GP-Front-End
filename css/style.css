@@ -484,6 +484,14 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 }
 /****Teacher Exam links Page****/
 /*Start 404 page*/
+#header-404{
+    font-family: var(--logo-font);
+    text-transform: uppercase;
+    font-size: 3em;
+}
+.svg-404 svg{
+    width: 60%;
+}
 /* img.img-404{
     height: 73%;
     width: 100%;
