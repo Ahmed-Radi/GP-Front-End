@@ -327,6 +327,34 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 
 /*************************************/
 
+/****Result Page****/
+.result-main{padding-top: 90px;}
+.result-main .result-info{
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+.result-main .result-info:hover{box-shadow: 1px 3px 8px -1px var(--shadow-color);}
+.result-main .result-info .subject-name,
+.result-main .result-info .subject-date,
+.result-main .result-info .subject-doctor{
+    width: 135px;
+    margin: calc((100% - 40%)/12);/*6 is the number of cols*/
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+}
+.last:last-child{margin-bottom: 100px;}/*this Shared between each of the course pages for the student and the teacher */
+/****Student result Page****/
+
+/*************************************/
+
 /****Teacher Courses Page****/
 /*Model*/
 .close-botton,
