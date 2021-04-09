@@ -72,7 +72,7 @@ a:hover{
     color: var(--nav-text-color);
     padding: 23px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     font-family: var(--main-font);
     display: inline-block;
     position: relative;
@@ -104,9 +104,9 @@ a:hover{
 }
 .navbar-collapse{z-index: 1;background-color: #fff;}/*Make navbar when collapsed have background color white*/
 /*End NavBar Animation*/
-.nav-switch{position: relative;top: 22.5px;} /***in small screnn top: 6px;*/
-.language{font-weight: 700;font-family: var(--main-font);}
-/*Swith Button*/
+.nav-switch{display:block;margin-top: 22px;} /***in small screnn top: 6px;*/
+.language{font-weight: 500;font-family: var(--main-font);}
+/*Start Swith Button*/
 .switch{
     height: 27px;
     width: 55px;
