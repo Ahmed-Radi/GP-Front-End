@@ -482,6 +482,9 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .green-color:hover{/* for icon save */
     color: var(--green-color);
 }
+.subject {
+    word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without bearking it */
+}
 /****Teacher Exam links Page****/
 /*Start 404 page*/
 /* img.img-404{
