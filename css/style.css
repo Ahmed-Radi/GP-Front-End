@@ -511,7 +511,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .exam-screen .exam-screen-header{margin-bottom: 40px;}
 .screen{
     height: 350px;
-    border: 1px  solid #000;
+    border: 1px  solid var(--border-color);
     position: relative;
     overflow: hidden;
     /* transition: 1s ease-in-out; */
