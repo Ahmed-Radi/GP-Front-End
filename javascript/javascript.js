@@ -1,3 +1,15 @@
+/************* Strat Add Active class *************/
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('a');
+const menuLength = menuItem.length;
+for (let i = 0 ; i < menuLength; i++){
+    if(menuItem[i].href === currentLocation){
+        menuItem[i].parentNode.classList.add('active');
+    }
+}
+/************* End Add Active class *************/
+
+/************* Start Make navbar go up and down *************/
 // add padding top to show content behind navbar
 $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 
@@ -15,6 +27,7 @@ if ($('.smart-scroll').length > 0) { // check if element exists
         last_scroll_top = scroll_top;
     });
 }
+/************* End Make navbar go up and down *************/
 
 /************* Exam Links *************/
 const last = document.getElementById('last'); // define parent contain all cards

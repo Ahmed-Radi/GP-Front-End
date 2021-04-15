@@ -1,3 +1,4 @@
+/********* Start dropdown list *********/
 const $dropdown = $(".dropdown");
 const $dropdownToggle = $(".dropdown-toggle");
 const $dropdownMenu = $(".dropdown-menu");
@@ -23,3 +24,4 @@ $(window).on("load resize", function() {
     $dropdown.off("mouseenter mouseleave");
   }
 });
+/*********End dropdown list*********/
