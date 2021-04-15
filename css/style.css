@@ -13,6 +13,7 @@
         --nav-text-color:#090909;
     /*navbar*/
     --section-background: #FBFCFD;
+    --white-text-color: #FBFCFD;
     /*Footer*/
     --footer-color: #4B647E;
     --shadow-color: #0000003d;
@@ -22,7 +23,7 @@
 }
 ::selection{
     background-color: var(--nav-hover-color);
-    color: var(--section-background);
+    color: var(--white-text-color);
 }
 /**Root*/
 *{
@@ -168,7 +169,7 @@ input:checked + .slider:before{
     border-radius: 30px;
     border: none;
     background-color: var(--logo-color);
-    color: var(--section-background);
+    color: var(--white-text-color);
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -190,8 +191,8 @@ input:checked + .slider:before{
 
 /**Card hover*/
 .services-cards .card:hover{
-    color: var(--section-background);
-    fill: var(--section-background);
+    color: var(--white-text-color);
+    fill: var(--white-text-color);
     transition: background-color 0.5s ease-in-out;
 }
 .services-cards .card:nth-child(1):hover{background: #EFB274;}
@@ -388,11 +389,11 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 }
 .close-botton:hover{
     background-color: var(--nav-hover-color);
-    color: var(--section-background);
+    color: var(--white-text-color);
 }
 .add-botton:hover{
     background-color: var(--red-color);
-    color: var(--section-background);
+    color: var(--white-text-color);
 }
 /*Model*/
 .teacher-courses-main{padding-top: 90px;}
@@ -500,7 +501,13 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     width: 100%;
 } */
 /*End 404 page*/
-
+.page-404 a{
+    margin: 0 auto 40px auto;
+    padding: 13px;
+    background: var(--nav-hover-color);
+    color: var(--white-text-color);
+    border-radius: 42px;
+}
 /*********Start Exam Screen*********/
 .exam-screen{
     font-family: var(--main-font);
@@ -528,7 +535,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     box-shadow: 0px -10px 20px 20px #226ec0;
 }
 .screen i.fa-times{
-    color: var(--section-background);
+    color: var(--white-text-color);
     font-size: 19px;
     position: absolute;
     bottom: 8px;
@@ -539,6 +546,6 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     position: absolute;
     bottom: 8px;
     right: 60px;
-    color: var(--section-background);
+    color: var(--white-text-color);
 }
 /*********End Exam Screen*********/
