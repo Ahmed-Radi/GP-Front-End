@@ -15,6 +15,8 @@ if ($('.smart-scroll').length > 0) { // check if element exists
         last_scroll_top = scroll_top;
     });
 }
+
+/************* Exam Links *************/
 const last = document.getElementById('last'); // define parent contain all cards
 last.addEventListener("click", (event)=>{ // add click event in parent
     if(event.target.tagName === 'I'){ // Write 'I' not 'i'tag name must be upper case
@@ -31,7 +33,7 @@ last.addEventListener("click", (event)=>{ // add click event in parent
                 input.value = span[i].textContent;  // take the text from span to the input
                 card.insertBefore(input, span[0])
                 span[i].remove() // remove span and add input in the same place
-                i--; //this decreament because when remove a span element the span index getting decrease 
+                i--; //this decreament because when remove a span element the span index getting decrease
                 //for example if the span length is 4 when we remove one they will be 3 so you should decrease that's why the index should to decrease
             }
             icon.className = 'fa fa-check-circle green-color'; // change icon from 'fa-edit' to 'fa-check-circle' to change icon shape
@@ -48,11 +50,12 @@ last.addEventListener("click", (event)=>{ // add click event in parent
                 card.insertBefore(span, input[0]); // change the place between input and span
                 input[i].remove(); // remove span and add input in the same place
                 i--;
-            }    
+            }
             icon.className = 'fa fa-edit'; // change icon from 'fa-check-circle' to 'fa fa-edit' to change icon shape
             // icon.setAttribute('id',''); // remove ID 'green-color' to make icon have blue color when hover on it
             icon.setAttribute('class','fa fa-edit edit'); // change ID from 'green-color' to 'edit' to make icon have green color when hover on it
             icon.setAttribute('value','edit'); //Make value 'edit' to enter in first 'if else' condation
         }
     }
-})
+});
+/************* Exam Links *************/

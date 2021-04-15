@@ -13,13 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Permanent+Marker&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <!-- Google fonts -->
+    <!-- fonts Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    <!-- fonts Awesome -->
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- AOS -->
     <link rel="stylesheet" href="../../css/style.css">
-    <title>Teacher Courses</title>
+    <title>Exam links</title>
 </head>
 <body>
+
     <!-- Start navbar -->
 
     <nav class="navbar smart-scroll navbar-expand-lg navbar-light bg-light" dir="auto">
@@ -30,22 +33,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="./teacher-navbar.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./exam-links.html">Exam</a>
+                        <a class="nav-link" href="./exam.html">Exam</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./teacher-courses.html">Courses</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                             Services
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Add Exam</a>
-                            <a class="dropdown-item" href="./exam-screen.html">Monitor Exam</a>
+                            <a class="dropdown-item active" href="#">Monitor Exam</a>
                             <!-- <a class="dropdown-item" href="#">Something else here</a> -->
                         </div>
                     </li>
@@ -71,11 +74,76 @@
     </nav>
 
     <!-- End navbar -->
-        <!-- Scripts -->
+
+    <!-- Start Exam Screen Section -->
+    <section class="exam-screen">
+        <div class="container">
+            <div class="row" id="exam-screen-cards">
+                <h3 class="col-12 exam-screen-header">Exam Name: Computer Science</h3>
+                <div class="col-md-3 col-sm-6 screen">
+                    <div class="screen-icons">
+                        <i class="fa fa-microphone"></i>
+                        <i class="fa fa-times" value="hii"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 screen">
+                    <div class="screen-icons">
+                        <i class="fa fa-microphone"></i>
+                        <i class="fa fa-times" value="hii"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 screen">
+                    <div class="screen-icons">
+                        <i class="fa fa-microphone"></i>
+                        <i class="fa fa-times" value="hii"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 screen">
+                    <div class="screen-icons">
+                        <i class="fa fa-microphone"></i>
+                        <i class="fa fa-times" value="hii"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 screen">
+                    <div class="screen-icons">
+                        <i class="fa fa-microphone"></i>
+                        <i class="fa fa-times" value="hii"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 screen">
+                    <div class="screen-icons">
+                        <i class="fa fa-microphone"></i>
+                        <i class="fa fa-times" value="hii"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 screen">
+                    <div class="screen-icons">
+                        <i class="fa fa-microphone"></i>
+                        <i class="fa fa-times" value="hii"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 screen">
+                    <div class="screen-icons">
+                        <i class="fa fa-microphone"></i>
+                        <i class="fa fa-times" value="hii"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Exam Screen Section -->
+
+    <!-- Scripts -->
         <!-- Bootstrap -->
         <script src="../../JQuery/JQuery.js"></script>
         <script src="../../javascript/bootstrap.js"></script>
         <!-- Bootstrap -->
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- AOS -->
         <script src="../../JQuery/jq.js"></script>
         <script src="../../javascript/javascript.js"></script>
     <!-- Scripts -->
