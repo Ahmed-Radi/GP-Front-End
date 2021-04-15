@@ -500,3 +500,45 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     width: 100%;
 } */
 /*End 404 page*/
+
+/*********Start Exam Screen*********/
+.exam-screen{
+    font-family: var(--main-font);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.exam-screen .container{max-width: 100%;}/* To make the content not depart from the page */
+.exam-screen .exam-screen-header{margin-bottom: 40px;}
+.screen{
+    height: 350px;
+    border: 1px  solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+    /* transition: 1s ease-in-out; */
+}
+.screen .screen-icons{
+    display: none;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+}
+.screen:hover .screen-icons{
+    width: 100%;
+    display: block;
+    box-shadow: 0px -10px 20px 20px #226ec0;
+}
+.screen i.fa-times{
+    color: var(--section-background);
+    font-size: 19px;
+    position: absolute;
+    bottom: 8px;
+    right: 25px;
+}
+.screen i.fa-microphone{
+    font-size: 19px;
+    position: absolute;
+    bottom: 8px;
+    right: 60px;
+    color: var(--section-background);
+}
+/*********End Exam Screen*********/
