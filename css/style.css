@@ -19,7 +19,7 @@
     --shadow-color: #0000003d;
     --border-color: #9a9a9a38;
     --red-color: #e74343; /*it for 'x' shap in link exam card*/
-    --green-color: #21ec0f;
+    --green-color: #36e226;
 }
 ::selection{
     background-color: var(--nav-hover-color);
@@ -549,3 +549,68 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     color: var(--white-text-color);
 }
 /*********End Exam Screen*********/
+
+/*************************************/
+
+/****Student Courses Page****/
+.student-request{padding-top: 90px;font-family: var(--main-font);}
+.student-request .select-all label{margin: 0;margin-right: 15px;}
+.student-request input[type=submit]{/*All inputs have type submit*/
+    border: none;
+    background-color: transparent;
+    transition: color 0.4s ease-in-out;/*Make transaction only for color style  to make transaction not affect in javascript code when hidden and show inputs*/
+}
+input[type=checkbox]{/** this for select all*/
+    margin: 0;
+    /* width: 13px; */
+    /* height: 13px; */
+}
+.student-request .select-all input[type=checkbox]{margin-right: 10px;}
+.student-request .select-all input[type=submit]{/** it is for 'accept all' and 'remove all' */
+    margin: 0;
+    margin-right: 20px;
+    visibility: hidden;
+}
+.student-request input[type=submit][value='Accept All']:hover,[value='Accept']:hover{color: var(--green-color);}
+.student-request input[type=submit][value='Remove All']:hover,[value='Remove']:hover{color: var(--red-color);}
+.student-request input[type=submit]:focus{outline: none;}/*to remove the border that appears when focus on the 'Accept' input*/
+.student-request .student-info{
+    margin-top: 56px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+.student-request .student-info:hover{box-shadow: 1px 3px 8px -1px var(--shadow-color);}
+.student-request .student-info .student-name,
+.student-request .student-info .student-id,
+.student-request .student-info .request-input{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 110px;
+    margin: calc((100% - 80%)/6);
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+}
+/* .student-request label.label-student-card{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+.student-request .student-info .student-name{
+    word-break: break-word;/* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without bearking it */
+    min-width: 220px;
+}
+.student-request .student-info .request-input input{width: 100%;}/*To make 'input' take all size for 'span' parent*/
+.student-request .student-info .request-input{width: 65px;}
+.student-request .last:last-child{margin-bottom: 100px;}/*this Shared between each of the course and exam pages for the student and the teacher */
+/****Student Courses Page****/
+
+/*************************************/
