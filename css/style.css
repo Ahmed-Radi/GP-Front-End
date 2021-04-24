@@ -36,7 +36,7 @@ body{
 a:hover{
     text-decoration: none;
 }
-/**Start Navbar Scroll*/
+/** Start Navbar Scroll */
 .smart-scroll{
     top: 0;
     right: 0;
@@ -46,9 +46,9 @@ a:hover{
 }
 .scrolled-down{transform:translateY(-100%); transition: all 0.5s ease-in-out;}
 .scrolled-up{transform:translateY(0); transition: all 0.5s ease-in-out;}
-/**End Navbar Scroll*/
+/** End Navbar Scroll */
 
-/**Strat Navbar*/
+/** Strat Navbar */
 .navbar{
     width: 100%;
     z-index: 1;
@@ -148,10 +148,10 @@ input:checked + .slider:before{
 }
 .slider.round{border-radius: 34px;}
 .slider.round:before{border-radius: 50%;}
-/*End Swith Style*/
+/** End Swith Style */
 /**End Navbar*/
 
-/**Start First Section*/
+/** Start First Section */
 .first-section{
     min-height: 100vh;
     overflow: hidden;
@@ -173,7 +173,7 @@ input:checked + .slider:before{
     font-weight: 500;
     text-transform: capitalize;
 }
-/**End First Section*/
+/** End First Section */
 
 /** Start services Section*/
 .services{
@@ -189,7 +189,7 @@ input:checked + .slider:before{
     margin-top: 50px;
 }
 
-/**Card hover*/
+/** Card hover */
 .services-cards .card:hover{
     color: var(--white-text-color);
     fill: var(--white-text-color);
@@ -201,10 +201,10 @@ input:checked + .slider:before{
 .services-cards .card:nth-child(4):hover{background: #2573CB;}
 .services-cards .card:nth-child(5):hover{background: #847FE8;}
 .services-cards .card:nth-child(6):hover{background: #D7676C;}
-/**Card hover*/
+/** Card hover */
 /** End services Section*/
 
-/* Start Features Section */
+/** Start Features Section */
 .features{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -330,7 +330,6 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 
 /*************************************/
 
-
 /****Result Page****/
 .result-main{padding-top: 90px;}
 .result-main .result-info{
@@ -361,9 +360,8 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 
 /**************** Teacher *********************/
 
-
 /****Teacher Courses Page****/
-/*Model*/
+/**Model*/
 .close-botton,
 .add-botton{
     border-radius: 24px;
@@ -395,7 +393,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     background-color: var(--red-color);
     color: var(--white-text-color);
 }
-/*Model*/
+/**Model*/
 .teacher-courses-main{padding-top: 90px;}
 .teacher-courses-header{
     width: 150px;
@@ -427,11 +425,17 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .teacher-courses-main .teacher-courses-info .teacher-subject-name,
 .teacher-courses-main .teacher-courses-info .teacher-subject-date,
 .teacher-courses-main .teacher-courses-info .teacher-subject-doctor{
-    width: 155px;
-    margin: calc((100% - 180px)/6);/*6 is the number of cols*/
+    width: 180px;
+    margin: 13px;
     margin-top: 0;
     margin-bottom: 0;
     display: inline-block;
+}
+.teacher-courses-main .teacher-courses-info .teacher-subject-date{
+    width: 240px;
+}
+.teacher-courses-main .teacher-courses-info .teacher-subject-date:hover{
+    color: var(--nav-hover-color);
 }
 /****Teacher Courses Page****/
 
@@ -440,7 +444,6 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .exam-link-teacher-main input{ /*It appears when you click on the Modify button, and in it, the values in the span are added to the input so that the user can modify the values*/
     width: 135px;
 }
-a.exam-info{display: block;color: var(--nav-text-color);}
 .exam-link-teacher-main .exam-info{
     width: 100%;
     margin-top: 56px;
@@ -467,12 +470,15 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     display: inline-block;
 }
 .exam-link-teacher-main .exam-info .subject-name{
-    width: 132px;
+    width: 155px;
 }
+a.subject-name{display: block;}
+a.subject-name:hover{color: var(--nav-hover-color);}
 .exam-link-teacher-main i{
     transition: 0.45s ease;
     font-size: 20px;
     margin-left: 5px;
+    display: inline-block;
 }
 .exam-link-teacher-main i.edit:hover{
     color: var(--nav-hover-color);
@@ -555,7 +561,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 /*************************************/
 
 /**** Start Student Requests ****/
-.student-request{padding-top: 90px;font-family: var(--main-font);}
+.student-request{padding-top: 180px;font-family: var(--main-font);}
 .student-request .select-all label{margin: 0;margin-right: 15px;}
 .student-request input[type=submit]{/*All inputs have type submit*/
     border: none;
