@@ -435,7 +435,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 }
 /****Teacher Courses Page****/
 
-/****Teacher Exam links Page****/
+/**** Start Teacher Exam links Page****/
 .exam-link-teacher-main{padding-top: 90px;}
 .exam-link-teacher-main input{ /*It appears when you click on the Modify button, and in it, the values in the span are added to the input so that the user can modify the values*/
     width: 135px;
@@ -486,8 +486,9 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .subject {
     word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without bearking it */
 }
-/****Teacher Exam links Page****/
-/*Start 404 page*/
+/**** End Teacher Exam links Page ****/
+
+/***Start 404 page*/
 #header-404{
     font-family: var(--logo-font);
     text-transform: uppercase;
@@ -500,7 +501,6 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     height: 73%;
     width: 100%;
 } */
-/*End 404 page*/
 .page-404 a{
     margin: 0 auto 40px auto;
     padding: 13px;
@@ -508,6 +508,8 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     color: var(--white-text-color);
     border-radius: 42px;
 }
+/***End 404 page*/
+
 /*********Start Exam Screen*********/
 .exam-screen{
     font-family: var(--main-font);
@@ -552,7 +554,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 
 /*************************************/
 
-/****Student Courses Page****/
+/**** Start Student Requests ****/
 .student-request{padding-top: 90px;font-family: var(--main-font);}
 .student-request .select-all label{margin: 0;margin-right: 15px;}
 .student-request input[type=submit]{/*All inputs have type submit*/
@@ -611,6 +613,6 @@ input[type=checkbox]{/** this for select all*/
 .student-request .student-info .request-input input{width: 100%;}/*To make 'input' take all size for 'span' parent*/
 .student-request .student-info .request-input{width: 65px;}
 .student-request .last:last-child{margin-bottom: 100px;}/*this Shared between each of the course and exam pages for the student and the teacher */
-/****Student Courses Page****/
+/**** Start Student Requests ****/
 
 /*************************************/

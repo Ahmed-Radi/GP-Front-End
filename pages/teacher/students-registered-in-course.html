@@ -13,13 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Permanent+Marker&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <!-- Google fonts -->
-    <!-- fonts Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    <!-- fonts Awesome -->
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- AOS -->
     <link rel="stylesheet" href="../../css/style.css">
-    <title>Exam links</title>
+    <title>Students registered in course</title>
 </head>
 <body>
 
@@ -42,7 +40,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./teacher-courses.html">Courses</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <!-- use "javascript:void(0)" to make link do nnothing at all -->
                         <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown">
                             Services
@@ -77,47 +75,57 @@
 
     <!-- End navbar -->
 
-    <!-- Start Exam Section -->
-    <section class="exam-link-teacher-main">
+    <!-- Start Student Requests Section -->
+    <section class="student-request">
         <div class="container">
-            <div class="row last" id="page-body">
-                <h4 class="exam-header col-12">Schedule of exams dates</h4>
-                <a class="exam-info teacher-link text-md-center col-8" id="teacher-link" href="./exam-screen.html">
-                    <span class="subject subject-name">Computer Science</span>
-                    <span class="subject subject-date">2021/12/2</span>
-                    <span class="subject subject-time">9:00 AM</span>
-                    <span class="subject subject-duration">2h</span>
-                    <i class="fa fa-edit edit" value="edit"></i>
-                    <i class="fa fa-times remove" value="remove"></i>
-                </a>
-                <a class="exam-info teacher-link text-md-center col-8" href="./exam-screen.html">
-                    <span class="subject subject-name" id="aa">Computer Science</span>
-                    <span class="subject subject-date">2021/11/2</span>
-                    <span class="subject subject-time">1:00 PM</span>
-                    <span class="subject subject-duration">2h</span>
-                    <i class="fa fa-edit edit" value="edit"></i>
-                    <i class="fa fa-times remove" value="remove"></i>
-                </a>
-                <a class="exam-info teacher-link text-md-center col-8" href="./exam-screen.html">
-                    <span class="subject subject-name">Computer Science</span>
-                    <span class="subject subject-date">2021/12/2</span>
-                    <span class="subject subject-time">9:00 AM</span>
-                    <span class="subject subject-duration">3h</span>
-                    <i class="fa fa-edit edit" value="edit"></i>
-                    <i class="fa fa-times remove" value="remove"></i>
-                </a>
-                <a class="exam-info teacher-link text-md-center col-8" href="./exam-screen.html">
-                    <span class="subject subject-name">Computer Science</span>
-                    <span class="subject subject-date">2021/12/2</span>
-                    <span class="subject subject-time">9:00 AM</span>
-                    <span class="subject subject-duration">2h</span>
-                    <i class="fa fa-edit edit" value="edit"></i>
-                    <i class="fa fa-times remove" value="remove"></i>
-                </a>
+            <div class="row last" id="page-content">
+                <h4 class="courses-header col-12">Students registered the course</h4>
+                <div class="select-all col-12">
+                    <label for="select-all">
+                        <input type="checkbox" name="" value="Select All" id="select-all">Select All
+                    </label>
+                    <input type="submit" name="" value="Remove All" class="remove-all">
+                </div>
+                <!-- Cards -->
+
+                <div class="student-info text-md-center col-8">
+                    <input type="checkbox" name="" value="" class="select"/>
+                    <span class="student-name">Ahmed Radi Abdelqader</span>
+                    <span class="student-id">20170024</span>
+                    <span class="request-input">
+                        <input type="submit" value="Remove" class="remove">
+                    </span>
+                </div>
+                <div class="student-info text-md-center col-8">
+                    <input type="checkbox" name="" value="" class="select"/>
+                    <span class="student-name">Ahmed Radi Abdelqader</span>
+                    <span class="student-id">20170024</span>
+                    <span class="request-input">
+                        <input type="submit" value="Remove" class="remove">
+                    </span>
+                </div>
+                <div class="student-info text-md-center col-8">
+                    <input type="checkbox" name="" value="" class="select"/>
+                    <span class="student-name">Ahmed Radi Abdelqader</span>
+                    <span class="student-id">20170024</span>
+                    <span class="request-input">
+                        <input type="submit" value="Remove" class="remove">
+                    </span>
+                </div>
+                <div class="student-info text-md-center col-8">
+                    <input type="checkbox" name="" value="" class="select"/>
+                    <span class="student-name">Ahmed Radi Abdelqader</span>
+                    <span class="student-id">20170024</span>
+                    <span class="request-input">
+                        <input type="submit" value="Remove" class="remove">
+                    </span>
+                </div>
+
+                <!-- Cards -->
             </div>
         </div>
     </section>
-    <!-- End Exam Section -->
+    <!-- End Student Requests Section -->
 
     <!-- Scripts -->
         <!-- Bootstrap -->
@@ -131,7 +139,8 @@
         </script>
         <!-- AOS -->
         <script src="../../JQuery/jq.js"></script>
-        <script src="../.././javascript/javascript.js"></script>
+        <script src="../../javascript/javascript.js"></script>
+        <!-- <script src="../../javascript/student-requests.js"></script> -->
     <!-- Scripts -->
 </body>
 </html>
