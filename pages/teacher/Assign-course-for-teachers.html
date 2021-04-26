@@ -13,11 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Permanent+Marker&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <!-- Google fonts -->
+    <!-- fonts Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- fonts Awesome -->
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- AOS -->
     <link rel="stylesheet" href="../../css/style.css">
-    <title>Teacher Courses</title>
+    <title>Assign Course For Teachers</title>
 </head>
 <body>
 
@@ -75,8 +78,6 @@
     <!-- End navbar -->
 
     <!-- Model Form Add Courses -->
-    
-    <!-- Remove -->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered"><!--"modal-dialog" -> make model take small size "modal-dialog-centered" -> Make model ceneter in the page-->
             <div class="modal-content" id="box-body"><!--contain the model contact-->
@@ -87,12 +88,30 @@
                     </button>
                 </div>
                 <div class="modal-body"><!--contain only the input fileds-->
-                    <label for="course-name">Course name
-                        <input type="text" id="course-name" placeholder="Course name">
+                    <label for="doctor-name">Doctor Name
+                        <select id="doctor-name" name = "dropdown">
+                            <option value = "" selected></option>
+                            <option value = "Ahmed Radi">Ahmed Radi</option>
+                            <option value = "Akram Ebrahim">Akram Ebrahim</option>
+                            <option value = "Eslam Amgad">Eslam Amgad</option>
+                        </select>
                     </label>
+                    <label for="course-name">Course Name
+                        <select id="course-name" name = "dropdown">
+                            <option value = "" selected></option>
+                            <option value = "Computer Architecture">Computer Architecture</option>
+                            <option value = "Java">Java</option>
+                            <option value = "Discrete Mathematics">Discrete Mathematics</option>
+                        </select>
+                    </label>
+                    <!-- <label for="course-name">Degree For course
+                        <input type="text" id="course-name" placeholder="Course name">
+                    </label> -->
+
                     <!-- <label for="course">Doctor name
                         <input type="text" id="course">
                     </label> -->
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="add-botton">Add</button>
@@ -101,46 +120,35 @@
             </div>
         </div>
     </div>
-    <!-- Remove -->
-
     <!-- Model Form Add Courses -->
 
     <!-- Start Student Courses Section -->
-    <section class="teacher-courses-main">
+
+    <section class="teacher-main-info">
         <div class="container">
-            <div class="row last" id="page-body">
+            <div class="row content" id="page-body">
                 <div  class="col-12">
                     <h4 class="teacher-courses-header">Yor courses</h4>
-                    <!-- <button class="add-course"  data-toggle="modal" data-target="#staticBackdrop">Add courses</button> -->
+                    <button class="add-course"  data-toggle="modal" data-target="#staticBackdrop">Add courses</button>
                 </div>
-                <div class="teacher-courses-info text-md-center col-8">
-                    <span class="teacher-subject-name">Computer Science</span>
-                    <span class="number-student-register-course">525</span>
-                    <a class="student-register-course" href="./students-registered-in-course.html">Students Registered in course</a>
-                </div>
-                <div class="teacher-courses-info text-md-center col-8">
-                    <span class="teacher-subject-name">Computer Science</span>
-                    <span class="number-student-register-course">635</span>
-                    <a class="student-register-course" href="./students-registered-in-course.html">Students Registered in course</a>
-                </div>
-                <div class="teacher-courses-info text-md-center col-8">
-                    <span class="teacher-subject-name">Computer Science</span>
-                    <span class="number-student-register-course">525</span>
-                    <a class="student-register-course" href="./students-registered-in-course.html">Students Registered in course</a>
-                </div>
-                <div class="teacher-courses-info text-md-center col-8">
-                    <span class="teacher-subject-name">Computer Science</span>
-                    <span class="number-student-register-course">322</span>
-                    <a class="student-register-course" href="./students-registered-in-course.html">Students Registered in course</a>
-                </div>
-                <div class="teacher-courses-info text-md-center col-8">
-                    <span class="teacher-subject-name">Computer Science</span>
-                    <span class="number-student-register-course">123</span>
-                    <a class="student-register-course" href="./students-registered-in-course.html">Students Registered in course</a>
-                </div>
-            </div>
-        </div>
-    </section>
+
+                <span class="teacher-info teacher-link text-md-center col-8">
+                    <span class="subject-doctor-name">Ahmed Radi</span>
+                    <pan class="subject-name">Computer Scinse</pan><!-- Name of Course will print from database -->
+                    <i class="fa fa-times remove" value="remove"></i>
+                </span>
+                <span class="teacher-info teacher-link text-md-center col-8">
+                    <span class="subject-doctor-name">Ahmed Radi</span>
+                    <pan class="subject-name">Computer Scinse</pan><!-- Name of Course will print from database -->
+                    <i class="fa fa-times remove" value="remove"></i>
+                </span>
+                <span class="teacher-info teacher-link text-md-center col-8">
+                    <span class="subject-doctor-name">Ahmed Radi</span>
+                    <pan class="subject-name">Computer Scinse</pan><!-- Name of Course will print from database -->
+                    <i class="fa fa-times remove" value="remove"></i>
+                </span>
+
+
     <!-- End Student Courses Section -->
 
     <!-- Scripts -->

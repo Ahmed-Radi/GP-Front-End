@@ -368,20 +368,6 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     border-color: var(--border-color);
     transition: 0.4s ease;
 }
-#course-name,
-#course{
-    margin-left: 10px;
-    margin-bottom: 10px;
-    border:0;
-    border-bottom: 1px solid var(--border-color);
-    transition: 0.4s ease;
-}
-#course-name:focus,
-#course:focus{
-    border:0;
-    border-bottom: 1px solid var(--nav-hover-color);
-    outline: 0 none;
-}
 .close-botton:hover{
     background-color: var(--red-color);
     color: var(--white-text-color);
@@ -616,6 +602,65 @@ input[type=checkbox]{/** this for select all*/
 .student-request .student-info .request-input input{width: 100%;}/*To make 'input' take all size for 'span' parent*/
 .student-request .student-info .request-input{width: 65px;}
 .student-request .last:last-child{margin-bottom: 100px;}/*this Shared between each of the course and exam pages for the student and the teacher */
-/**** Start Student Requests ****/
+/**** End Student Requests ****/
+
+/*************************************/
+
+/**** Start Assign Course For Teachers ****/
+#course-name,
+#doctor-name{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border:0;
+    border-bottom: 1px solid var(--border-color);
+    transition: 0.4s ease;
+}
+#course-name:focus,
+#doctor-name:focus{
+    border:0;
+    border-bottom: 1px solid var(--nav-hover-color);
+    outline: 0 none;
+}
+.teacher-main-info .teacher-courses-header{
+    width: 150px;
+    display: inline-block;
+}
+
+.teacher-main-info{padding-top: 90px;}
+.teacher-main-info input{ /*It appears when you click on the Modify button, and in it, the values in the span are added to the input so that the user can modify the values*/
+    width: 135px;
+}
+.teacher-main-info .teacher-info{
+    width: 100%;
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+.teacher-main-info .teacher-info:hover{
+    box-shadow: 1px 3px 8px -1px var(--shadow-color);
+}
+.teacher-main-info .teacher-info .subject-doctor-name,
+.teacher-main-info .teacher-info .subject-name{
+    width: 210px;
+    margin: 0 10px;
+    display: inline-block;
+}
+.teacher-main-info i{
+    transition: 0.45s ease;
+    font-size: 20px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.teacher-main-info i.remove:hover{
+    color: var(--red-color);
+}
+.teacher-main-info .content:last-child{margin-bottom: 100px;}/*this Shared between each of the course and exam pages for the student and the teacher */
+/**** End Assign Course For Teachers ****/
 
 /*************************************/

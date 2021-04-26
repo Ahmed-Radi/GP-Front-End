@@ -29,7 +29,7 @@ if ($('.smart-scroll').length > 0) { // check if element exists
 }
 /************* End Make navbar go up and down *************/
 
-/************* Exam Links *************/
+/************* Exam Links & Assign Course For Teachers *************/
 const pageBody = document.getElementById('page-body'); // define parent contain all cards
 if(pageBody){ // to solve problem "Cannot read property 'addEventListener' of null"
     pageBody.addEventListener("click", (event)=>{ // add click event in parent
@@ -55,7 +55,7 @@ if(pageBody){ // to solve problem "Cannot read property 'addEventListener' of nu
                 icon.setAttribute('value',''); // remove value from icon to enter in the next 'if else
             }else if(icon.getAttribute('value') === ''){
                 const input = card.getElementsByTagName('input');
-                let class_arr = ["name", "date", "time", "duration"] //span class array
+                let class_arr = ["date", "time", "duration"] //span class array
                 for(i = 0; i < input.length; i++) {
                     const span = document.createElement('span'); // create span to carry the input value
                     span.textContent = input[i].value; // take the text from input to the span
@@ -73,7 +73,7 @@ if(pageBody){ // to solve problem "Cannot read property 'addEventListener' of nu
         }
     });
 }
-/************* Exam Links *************/
+/************* Exam Links & Assign Course For Teachers *************/
 
 /************* Students registered in course *************/
 /** It is for select checkbox */
