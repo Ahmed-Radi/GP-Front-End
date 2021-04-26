@@ -20,6 +20,7 @@
     --border-color: #9a9a9a38;
     --red-color: #e74343; /*it for 'x' shap in link exam card*/
     --green-color: #36e226;
+    --link-color: #007bff;
 }
 ::selection{
     background-color: var(--nav-hover-color);
@@ -320,9 +321,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .courses-main .courses-info .subject-date,
 .courses-main .courses-info .subject-doctor{
     width: 135px;
-    margin: calc((100% - 40%)/12);/*6 is the number of cols*/
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 calc((100% - 40%)/12);
     display: inline-block;
 }
 .last:last-child{margin-bottom: 100px;}/*this Shared between each of the course and exam pages for the student and the teacher */
@@ -348,9 +347,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .result-main .result-info .subject-date,
 .result-main .result-info .subject-doctor{
     width: 135px;
-    margin: calc((100% - 40%)/12);/*6 is the number of cols*/
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 calc((100% - 40%)/12);
     display: inline-block;
 }
 .last:last-child{margin-bottom: 100px;}/*this Shared between each of the course pages for the student and the teacher */
@@ -386,11 +383,11 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     outline: 0 none;
 }
 .close-botton:hover{
-    background-color: var(--nav-hover-color);
+    background-color: var(--red-color);
     color: var(--white-text-color);
 }
 .add-botton:hover{
-    background-color: var(--red-color);
+    background-color: var(--nav-hover-color);
     color: var(--white-text-color);
 }
 /**Model*/
@@ -423,18 +420,22 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 }
 .teacher-courses-main .teacher-courses-info:hover{box-shadow: 1px 3px 8px -1px var(--shadow-color);}
 .teacher-courses-main .teacher-courses-info .teacher-subject-name,
-.teacher-courses-main .teacher-courses-info .teacher-subject-date,
-.teacher-courses-main .teacher-courses-info .teacher-subject-doctor{
-    width: 180px;
-    margin: 13px;
-    margin-top: 0;
-    margin-bottom: 0;
+.teacher-courses-main .teacher-courses-info .student-register-course,
+.teacher-courses-main .teacher-courses-info .number-student-register-course{
+    width: 165px;
+    margin: 0 13px;
     display: inline-block;
 }
-.teacher-courses-main .teacher-courses-info .teacher-subject-date{
+.teacher-courses-main .teacher-courses-info .teacher-subject-name{
+    width: 180px;
+}
+.teacher-courses-main .teacher-courses-info .student-register-course{
     width: 240px;
 }
-.teacher-courses-main .teacher-courses-info .teacher-subject-date:hover{
+.teacher-courses-main .teacher-courses-info .student-register-course{
+    color: var(--link-color);
+}
+.teacher-courses-main .teacher-courses-info .student-register-course:hover{
     color: var(--nav-hover-color);
 }
 /****Teacher Courses Page****/
@@ -464,16 +465,14 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .exam-link-teacher-main .exam-info .subject-time,
 .exam-link-teacher-main .exam-info .subject-duration{
     width: 110px;
-    margin: 4px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 10px;
     display: inline-block;
 }
 .exam-link-teacher-main .exam-info .subject-name{
-    width: 155px;
+    color: var(--link-color);
+    width: 175px;
 }
-a.subject-name{display: block;}
-a.subject-name:hover{color: var(--nav-hover-color);}
+.exam-link-teacher-main .exam-info a.subject-name:hover{color: var(--nav-hover-color);}
 .exam-link-teacher-main i{
     transition: 0.45s ease;
     font-size: 20px;
@@ -600,9 +599,7 @@ input[type=checkbox]{/** this for select all*/
     margin-left: 15px;
     margin-right: 15px;
     width: 110px;
-    margin: calc((100% - 80%)/6);
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 calc((100% - 80%)/6);
     display: inline-block;
 }
 /* .student-request label.label-student-card{

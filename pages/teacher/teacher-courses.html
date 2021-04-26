@@ -77,7 +77,7 @@
     <!-- Model Form Add Courses -->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered"><!--"modal-dialog" -> make model take small size "modal-dialog-centered" -> Make model ceneter in the page-->
-            <div class="modal-content"><!--contain the model contact-->
+            <div class="modal-content" id="box-body"><!--contain the model contact-->
                 <div class="modal-header"><!--contain only X button to close the model-->
                     <h5 class="modal-title" id="staticBackdropLabel">Add Courses</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -93,8 +93,8 @@
                     </label> -->
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="close-botton">Add</button>
-                    <button type="button" class="add-botton" data-dismiss="modal">Close</button>
+                    <button type="button" class="add-botton">Add</button>
+                    <button type="button" class="close-botton" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -104,40 +104,35 @@
     <!-- Start Student Courses Section -->
     <section class="teacher-courses-main">
         <div class="container">
-            <div class="row last">
+            <div class="row last" id="page-body">
                 <div  class="col-12">
                     <h4 class="teacher-courses-header">Yor courses</h4>
                     <button class="add-course"  data-toggle="modal" data-target="#staticBackdrop">Add courses</button>
                 </div>
                 <div class="teacher-courses-info text-md-center col-8">
                     <span class="teacher-subject-name">Computer Science</span>
-                    <span class="teacher-subject-doctor">Dr.Mohamed Reda</span>
-                    <a class="teacher-subject-date" href="./students-registered-in-course.html">Students Registered in course</a>
-                    <!-- <span class="subject-duration">2h</span> -->
+                    <span class="number-student-register-course">525</span>
+                    <a class="student-register-course" href="./students-registered-in-course.html">Students Registered in course</a>
                 </div>
                 <div class="teacher-courses-info text-md-center col-8">
                     <span class="teacher-subject-name">Computer Science</span>
-                    <span class="teacher-subject-doctor">Dr.Mohamed Reda</span>
-                    <a class="teacher-subject-date" href="./students-registered-in-course.html">Students Registered in course</a>
-                    <!-- <span class="subject-duration">2h</span> -->
+                    <span class="number-student-register-course">635</span>
+                    <a class="student-register-course" href="./students-registered-in-course.html">Students Registered in course</a>
                 </div>
                 <div class="teacher-courses-info text-md-center col-8">
                     <span class="teacher-subject-name">Computer Science</span>
-                    <span class="teacher-subject-doctor">Dr.Mohamed Reda</span>
-                    <a class="teacher-subject-date" href="./students-registered-in-course.html">Students Registered in course</a>
-                    <!-- <span class="subject-duration">2h</span> -->
+                    <span class="number-student-register-course">525</span>
+                    <a class="student-register-course" href="./students-registered-in-course.html">Students Registered in course</a>
                 </div>
                 <div class="teacher-courses-info text-md-center col-8">
                     <span class="teacher-subject-name">Computer Science</span>
-                    <span class="teacher-subject-doctor">Dr.Mohamed Reda</span>
-                    <a class="teacher-subject-date" href="./students-registered-in-course.html">Students Registered in course</a>
-                    <!-- <span class="subject-duration">2h</span> -->
+                    <span class="number-student-register-course">322</span>
+                    <a class="student-register-course" href="./students-registered-in-course.html">Students Registered in course</a>
                 </div>
                 <div class="teacher-courses-info text-md-center col-8">
                     <span class="teacher-subject-name">Computer Science</span>
-                    <span class="teacher-subject-doctor">Dr.Mohamed Reda</span>
-                    <a class="teacher-subject-date" href="./students-registered-in-course.html">Students Registered in course</a>
-                    <!-- <span class="subject-duration">2h</span> -->
+                    <span class="number-student-register-course">123</span>
+                    <a class="student-register-course" href="./students-registered-in-course.html">Students Registered in course</a>
                 </div>
             </div>
         </div>
@@ -156,7 +151,7 @@
         </script>
         <!-- AOS -->
         <script src="../../JQuery/jq.js"></script>
-        <script src="../../javascript/javascript.js"></script>
+        <script src="../../javascript/javascript.js" defer></script>
     <!-- Scripts -->
 </body>
 </html>

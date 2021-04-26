@@ -31,7 +31,7 @@ if ($('.smart-scroll').length > 0) { // check if element exists
 
 /************* Exam Links *************/
 const pageBody = document.getElementById('page-body'); // define parent contain all cards
-if(pageBody){ // to check if 'pageBody
+if(pageBody){ // to solve problem "Cannot read property 'addEventListener' of null"
     pageBody.addEventListener("click", (event)=>{ // add click event in parent
         if(event.target.tagName === 'I'){ // Write 'I' not 'i'tag name must be upper case
             //console.log(event.target.parentNode)
@@ -77,45 +77,47 @@ if(pageBody){ // to check if 'pageBody
 
 /************* Students registered in course *************/
 /** It is for select checkbox */
-let selectAll = document.getElementById('select-all');
-let inputSelected = document.getElementsByClassName('select');
-selectAll.onclick = () =>{ // arrow function
-    if(selectAll.checked == true){
-        document.querySelector('.remove-all').style.visibility = 'visible';//Make "Remove All" visible when the "Select all" checkbox is selected
-        for(let counter = 0; counter < inputSelected.length; counter++){
-            inputSelected[counter].checked = true; //Check all the checkboxes on the cards
-        }
-    }else{
-        document.querySelector('.remove-all').style.visibility = 'hidden';//Make "Remove All" hidden when the "Select all" checkbox is not selected
-        for(let counter = 0; counter < inputSelected.length; counter++){
-            inputSelected[counter].checked = false; //Uncheck all checkboxes in the cards
-        }
-    }
-}
-/**Event when click on 'Accept All', or 'Accept', or 'Remove All', 'Remove' do the action specific*/
-const parentAllContant = document.getElementById('page-content');
-parentAllContant.addEventListener("click", (event)=>{
-    const input = event.target;//target the input when clicking on it
-    const spanContainInput = input.parentNode;//target the parent of input
-    const card = spanContainInput.parentNode;//target the card to can remove it when clicking on the 'Accept' or 'Remove'
-    if(event.target.value === 'Remove'){
-        parentAllContant.removeChild(card);//remove selected card
-    }else if(event.target.value === 'Remove All'){
-        for(let counter = 0; counter < inputSelected.length; counter++){
-            // Add the "inputSelected.length! = 0" condition because if the "select all" option is selected, but no card is left to delete or add it, an error may appear to avoid it. This condition has been added.
-            if(card.getElementsByClassName('select')[counter].checked == true && inputSelected.length != 0){
-                    card.removeChild(card.getElementsByClassName('student-info')[counter]);
-                    // card.getElementsByClassName('student-info')[counter].remove();//Another way to remove selected card\s
-                    counter--;//this decreament because when remove a span element the span index getting decrease
-                    //for example if the cards length is 4 when we remove one they will be 3 so you should decrease that's why the index should to decrease
-            }else if( card.getElementsByClassName('select')[0].checked == false){ /**To can 'accept' or 'remove' student when the first checkbox is unselected */
-                if(card.getElementsByClassName('select')[counter].checked == true && inputSelected.length != 0){
-                    card.removeChild(card.getElementsByClassName('student-info')[counter]);
-                }
-            }else{
-                return 0;//So that no error appears when not selected any checkbox input for student card
+window.onload = function(){ // use this to solve problem "Cannot set property 'onclick' of null"
+    let selectAll = document.getElementById('select-all');
+    let inputSelected = document.getElementsByClassName('select');
+    selectAll.onclick = () =>{ // arrow function
+        if(selectAll.checked == true){
+            document.querySelector('.remove-all').style.visibility = 'visible';//Make "Remove All" visible when the "Select all" checkbox is selected
+            for(let counter = 0; counter < inputSelected.length; counter++){
+                inputSelected[counter].checked = true; //Check all the checkboxes on the cards
+            }
+        }else{
+            document.querySelector('.remove-all').style.visibility = 'hidden';//Make "Remove All" hidden when the "Select all" checkbox is not selected
+            for(let counter = 0; counter < inputSelected.length; counter++){
+                inputSelected[counter].checked = false; //Uncheck all checkboxes in the cards
             }
         }
     }
-})
+    /**Event when click on 'Accept All', or 'Accept', or 'Remove All', 'Remove' do the action specific*/
+    const parentAllContant = document.getElementById('page-content');
+    parentAllContant.addEventListener("click", (event)=>{
+        const input = event.target;//target the input when clicking on it
+        const spanContainInput = input.parentNode;//target the parent of input
+        const card = spanContainInput.parentNode;//target the card to can remove it when clicking on the 'Accept' or 'Remove'
+        if(event.target.value === 'Remove'){
+            parentAllContant.removeChild(card);//remove selected card
+        }else if(event.target.value === 'Remove All'){
+            for(let counter = 0; counter < inputSelected.length; counter++){
+                // Add the "inputSelected.length! = 0" condition because if the "select all" option is selected, but no card is left to delete or add it, an error may appear to avoid it. This condition has been added.
+                if(card.getElementsByClassName('select')[counter].checked == true && inputSelected.length != 0){
+                        card.removeChild(card.getElementsByClassName('student-info')[counter]);
+                        // card.getElementsByClassName('student-info')[counter].remove();//Another way to remove selected card\s
+                        counter--;//this decreament because when remove a span element the span index getting decrease
+                        //for example if the cards length is 4 when we remove one they will be 3 so you should decrease that's why the index should to decrease
+                }else if( card.getElementsByClassName('select')[0].checked == false){ /**To can 'accept' or 'remove' student when the first checkbox is unselected */
+                    if(card.getElementsByClassName('select')[counter].checked == true && inputSelected.length != 0){
+                        card.removeChild(card.getElementsByClassName('student-info')[counter]);
+                    }
+                }else{
+                    return 0;//So that no error appears when not selected any checkbox input for student card
+                }
+            }
+        }
+    })
+};
 /************* Students registered in course *************/
