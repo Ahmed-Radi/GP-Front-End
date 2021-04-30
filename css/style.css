@@ -668,11 +668,32 @@ input[type=checkbox]{/** this for select all*/
 /**************** Teacher *********************/
 
 /**** Start Add Courses ****/
+.add-course-time .course-name,
+.add-course-time .course-date,
+.add-course-time .exam-degree,
+.add-course-time .duration-time{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border:0;
+    border-bottom: 1px solid var(--border-color);
+    transition: 0.4s ease;
+}
+.add-course-time .course-name:focus,
+.add-course-time .course-date:focus,
+.add-course-time .exam-degree:focus,
+.add-course-time .duration-time:focus{
+    border:0;
+    border-bottom: 1px solid var(--nav-hover-color);
+    outline: 0 none;
+}
+.add-course-time label > span{
+    width: 200px;
+    display: inline-block;
+}
 .add-courses .page-header{
     width: 150px;
     display: inline-block;
 }
-
 .add-courses{padding-top: 90px;}
 .add-courses input{ /*It appears when you click on the Modify button, and in it, the values in the span are added to the input so that the user can modify the values*/
     width: 135px;
