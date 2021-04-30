@@ -841,3 +841,76 @@ input[type=checkbox]{/** this for select all*/
 /**** End Add Teacher ****/
 
 /*************************************/
+
+/**** Strat Add Teacher ****/
+.add-admin-model .admin-name,
+.add-admin-model .admin-email,
+.add-admin-model .admin-password{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border:0;
+    border-bottom: 1px solid var(--border-color);
+    transition: 0.4s ease;
+}
+.add-admin-model .admin-name:focus,
+.add-admin-model .admin-email:focus,
+.add-admin-model .admin-password:focus{
+    border:0;
+    border-bottom: 1px solid var(--nav-hover-color);
+    outline: 0 none;
+}
+.add-admin-model label >  span{
+    width: 200px;
+    display: inline-block;
+}
+.add-admin .page-header{
+    width: 150px;
+    display: inline-block;
+}
+.add-admin{padding-top: 90px;overflow: hidden;}
+.add-admin input{ /*It appears when you click on the Modify button, and in it, the values in the span are added to the input so that the user can modify the values*/
+    width: 135px;
+}
+.add-admin-button{
+    border-radius: 24px;
+    padding: 6px;
+    width: 130px;
+    background-color: var(--section-background);
+    border-color: var(--border-color);
+    transition: 0.4s ease;
+}
+.add-admin-button:hover{box-shadow: 1px 3px 8px -1px var(--shadow-color);}
+.add-admin .admin-info{
+    width: 100%;
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+.add-admin .admin-info:hover{box-shadow: 1px 3px 8px -1px var(--shadow-color);}
+.add-admin .admin-info .admin-email,
+.add-admin .admin-info .admin-password{
+    width: 200px;
+    margin: 0 5px;
+    display: inline-block;
+}
+.add-admin .admin-info .admin-email a{color: var(--link-color);}
+.add-admin .admin-info .admin-email a:hover{color: var(--logo-color);}
+.add-admin i{
+    transition: 0.45s ease;
+    font-size: 20px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.add-admin i.remove:hover{color: var(--red-color);}
+.admin{
+    word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without bearking it */
+}
+/**** End Add Teacher ****/
+
+/*************************************/
