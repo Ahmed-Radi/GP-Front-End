@@ -686,7 +686,8 @@ input[type=checkbox]{/** this for select all*/
     border-bottom: 1px solid var(--nav-hover-color);
     outline: 0 none;
 }
-.add-course-time label > span{
+
+.add-course-time label > .span-with-width{
     width: 200px;
     display: inline-block;
 }
@@ -757,7 +758,6 @@ input[type=checkbox]{/** this for select all*/
 /*************************************/
 
 /**** Strat Add Teacher ****/
-
 .teacher-name,
 .teacher-email,
 .teacher-password,
