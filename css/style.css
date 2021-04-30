@@ -607,16 +607,16 @@ input[type=checkbox]{/** this for select all*/
 /*************************************/
 
 /**** Start Assign Course For Teachers ****/
-#course-name,
-#doctor-name{
+.assign-course .doctor-name,
+.assign-course .course-name{
     margin-left: 10px;
     margin-bottom: 10px;
     border:0;
     border-bottom: 1px solid var(--border-color);
     transition: 0.4s ease;
 }
-#course-name:focus,
-#doctor-name:focus{
+.assign-course .doctor-name:focus,
+.assign-course .course-name:focus{
     border:0;
     border-bottom: 1px solid var(--nav-hover-color);
     outline: 0 none;
@@ -718,7 +718,7 @@ input[type=checkbox]{/** this for select all*/
 .add-courses .course-info .subject-duration,
 .add-courses .course-info .subject-degree{
         width: 70px;
-    }
+}
 .add-courses i{
     transition: 0.45s ease;
     font-size: 20px;
@@ -732,5 +732,91 @@ input[type=checkbox]{/** this for select all*/
     word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without bearking it */
 }
 /**** End Add Courses ****/
+
+/*************************************/
+
+/**** Strat Add Teacher ****/
+
+.teacher-name,
+.teacher-email,
+.teacher-password,
+.collage-name,
+.university-name,
+.teacher-phone{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border:0;
+    border-bottom: 1px solid var(--border-color);
+    transition: 0.4s ease;
+}
+.teacher-name:focus,
+.teacher-email:focus,
+.teacher-password:focus,
+.collage-name:focus,
+.university-name:focus,
+.teacher-phone:focus{
+    border:0;
+    border-bottom: 1px solid var(--nav-hover-color);
+    outline: 0 none;
+}
+.add-teacher-model label >  span{
+    width: 200px;
+    display: inline-block;
+}
+.add-courses .page-header{
+    width: 150px;
+    display: inline-block;
+}
+.add-courses{padding-top: 90px;overflow: hidden;}
+.add-courses input{ /*It appears when you click on the Modify button, and in it, the values in the span are added to the input so that the user can modify the values*/
+    width: 135px;
+}
+.add-course-button{
+    border-radius: 24px;
+    padding: 6px;
+    width: 130px;
+    background-color: var(--section-background);
+    border-color: var(--border-color);
+    transition: 0.4s ease;
+}
+.add-course-button:hover{box-shadow: 1px 3px 8px -1px var(--shadow-color);}
+.add-courses .teacher-info{
+    width: 100%;
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+.add-courses .teacher-info:hover{box-shadow: 1px 3px 8px -1px var(--shadow-color);}
+.add-courses .teacher-info .doctor-name,
+.add-courses .teacher-info .doctor-email,
+.add-courses .teacher-info .collage-name,
+.add-courses .teacher-info .university-name{
+    width: 200px;
+    margin: 0 5px;
+    display: inline-block;
+}
+.add-courses .teacher-info .doctor-name{
+    width: 150px;
+}
+.add-courses .teacher-info .doctor-email a{color: var(--link-color);}
+.add-courses .teacher-info .doctor-email a:hover{color: var(--logo-color);}
+.add-courses .teacher-info .collage-name{width: 285px;}
+.add-courses i{
+    transition: 0.45s ease;
+    font-size: 20px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.add-courses i.remove:hover{color: var(--red-color);}
+.teacher{
+    word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without bearking it */
+}
+/**** End Add Teacher ****/
 
 /*************************************/
