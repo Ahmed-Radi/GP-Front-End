@@ -87,36 +87,33 @@
                         <span aria-hidden="true">&times;</span><!--the 'X' shape-->
                     </button>
                 </div>
+
                 <div class="modal-body"><!--contain only the input fileds-->
-                    <label for="doctor-name">Doctor Name
-                        <select id="doctor-name" name = "dropdown">
-                            <option value = "" selected></option>
-                            <option value = "Ahmed Radi">Ahmed Radi</option>
-                            <option value = "Akram Ebrahim">Akram Ebrahim</option>
-                            <option value = "Eslam Amgad">Eslam Amgad</option>
-                        </select>
-                    </label>
-                    <label for="course-name">Course Name
-                        <select id="course-name" name = "dropdown">
-                            <option value = "" selected></option>
-                            <option value = "Computer Architecture">Computer Architecture</option>
-                            <option value = "Java">Java</option>
-                            <option value = "Discrete Mathematics">Discrete Mathematics</option>
-                        </select>
-                    </label>
-                    <!-- <label for="course-name">Degree For course
-                        <input type="text" id="course-name" placeholder="Course name">
-                    </label> -->
+                    <form action="" method="" class="assign-course">
+                        <label for="doctor-name">Doctor Name
+                            <select class="doctor-name" id="doctor-name" name = "dropdown">
+                                <option value = "" selected></option>
+                                <option value = "Ahmed Radi">Ahmed Radi</option>
+                                <option value = "Akram Ebrahim">Akram Ebrahim</option>
+                                <option value = "Eslam Amgad">Eslam Amgad</option>
+                            </select>
+                        </label>
+                        <label for="course-name">Course Name
+                            <select class="course-name" id="course-name" name = "dropdown">
+                                <option value = "" selected></option>
+                                <option value = "Computer Architecture">Computer Architecture</option>
+                                <option value = "Java">Java</option>
+                                <option value = "Discrete Mathematics">Discrete Mathematics</option>
+                            </select>
+                        </label>
+                        <div class="modal-footer">
+                            <button type="button" class="add-botton">Add</button>
+                            <button type="button" class="close-botton" data-dismiss="modal">Close</button>
+                        </div>
 
-                    <!-- <label for="course">Doctor name
-                        <input type="text" id="course">
-                    </label> -->
+                    </form>
+                </div>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="add-botton">Add</button>
-                    <button type="button" class="close-botton" data-dismiss="modal">Close</button>
-                </div>
             </div>
         </div>
     </div>
