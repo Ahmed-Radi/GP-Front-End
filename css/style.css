@@ -1,16 +1,16 @@
 /**Root*/
 :root{
     /*Fonts*/
-        --main-font: 'Roboto', sans-serif;
+    --main-font: 'Roboto', sans-serif;
     /*Fonts*/
     /*navbar*/
-        /*logo*/
-        --logo-color:#3D37F1;
-        --logo-font:'Permanent Marker', cursive;
-        /*logo*/
-        --switch-color: #2A85C9;
-        --nav-hover-color:#3D37F1;/* Not a repetition of color but an easy change of color */
-        --nav-text-color:#090909;
+    /*logo*/
+    --logo-color:#3D37F1;
+    --logo-font:'Permanent Marker', cursive;
+    /*logo*/
+    --switch-color: #2A85C9;
+    --nav-hover-color:#3D37F1;/* Not a repetition of color but an easy change of color */
+    --nav-text-color:#090909;
     /*navbar*/
     --section-background: #FBFCFD;
     --white-text-color: #FBFCFD;
@@ -18,7 +18,7 @@
     --footer-color: #4B647E;
     --shadow-color: #0000003d;
     --border-color: #9a9a9a38;
-    --red-color: #e74343; /*it for 'x' shap in link exam card*/
+    --red-color: #e74343; /*it for 'x' shape in link exam card*/
     --green-color: #36e226;
     --link-color: #007bff;
 }
@@ -49,7 +49,7 @@ a:hover{
 .scrolled-up{transform:translateY(0); transition: all 0.5s ease-in-out;}
 /** End Navbar Scroll */
 
-/** Strat Navbar */
+/** Start Navbar */
 .navbar{
     width: 100%;
     z-index: 1;
@@ -106,9 +106,9 @@ a:hover{
 }
 .navbar-collapse{z-index: 1;background-color: #fff;}/*Make navbar when collapsed have background color white*/
 /*End NavBar Animation*/
-.nav-switch{display:block;margin-top: 22px;} /***in small screnn top: 6px;*/
+.nav-switch{display:block;margin-top: 22px;} /***in small screen top: 6px;*/
 .language{font-weight: 500;font-family: var(--main-font);}
-/*Start Swith Button*/
+/**Start switch Button*/
 .switch{
     height: 27px;
     width: 55px;
@@ -149,7 +149,7 @@ input:checked + .slider:before{
 }
 .slider.round{border-radius: 34px;}
 .slider.round:before{border-radius: 50%;}
-/** End Swith Style */
+/** End switch Style */
 /**End Navbar*/
 
 /** Start First Section */
@@ -359,8 +359,11 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 
 /****Teacher Courses Page****/
 /**Model*/
-.close-botton,
-.add-botton{
+.modal-title{
+    text-transform: capitalize;
+}
+.close-button,
+.add-button{
     border-radius: 24px;
     padding: 6px;
     width: 100px;
@@ -368,11 +371,11 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     border-color: var(--border-color);
     transition: 0.4s ease;
 }
-.close-botton:hover{
+.close-button:hover{
     background-color: var(--red-color);
     color: var(--white-text-color);
 }
-.add-botton:hover{
+.add-button:hover{
     background-color: var(--nav-hover-color);
     color: var(--white-text-color);
 }
@@ -475,7 +478,7 @@ a.exam-info{display: block;color: var(--nav-text-color);}
     color: var(--green-color);
 }
 .subject {
-    word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without bearking it */
+    word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without breaking it */
 }
 /**** End Teacher Exam links Page ****/
 
@@ -596,7 +599,7 @@ input[type=checkbox]{/** this for select all*/
     right: 0;
 } */
 .student-request .student-info .student-name{
-    word-break: break-word;/* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without bearking it */
+    word-break: break-word;/* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without breaking it */
     min-width: 220px;
 }
 .student-request .student-info .request-input input{width: 100%;}/*To make 'input' take all size for 'span' parent*/
@@ -751,13 +754,13 @@ input[type=checkbox]{/** this for select all*/
     color: var(--red-color);
 }
 .subject {
-    word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without bearking it */
+    word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without breaking it */
 }
 /**** End Add Courses ****/
 
 /*************************************/
 
-/**** Strat Add Teacher ****/
+/**** Start Add Teacher ****/
 .teacher-name,
 .teacher-email,
 .teacher-password,
@@ -836,13 +839,13 @@ input[type=checkbox]{/** this for select all*/
 }
 .add-courses i.remove:hover{color: var(--red-color);}
 .teacher{
-    word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without bearking it */
+    word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without breaking it */
 }
 /**** End Add Teacher ****/
 
 /*************************************/
 
-/**** Strat Add Teacher ****/
+/**** Start Add Teacher ****/
 .add-admin-model .admin-name,
 .add-admin-model .admin-email,
 .add-admin-model .admin-password{
@@ -909,7 +912,7 @@ input[type=checkbox]{/** this for select all*/
 }
 .add-admin i.remove:hover{color: var(--red-color);}
 .admin{
-    word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without bearking it */
+    word-break: break-word; /* add break to handle to long and Intertwined string like aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - this long word will damage the span style without breaking it */
 }
 /**** End Add Teacher ****/
 
