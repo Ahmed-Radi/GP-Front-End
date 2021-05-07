@@ -452,15 +452,24 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 .exam-link-teacher-main .exam-info .subject-name,
 .exam-link-teacher-main .exam-info .subject-date,
 .exam-link-teacher-main .exam-info .subject-time,
-.exam-link-teacher-main .exam-info .subject-duration{
-    width: 110px;
-    margin: 0 10px;
+.exam-link-teacher-main .exam-info .subject-duration,
+.exam-link-teacher-main .exam-info .article-question{
+    width: 100px;
+    margin: 0 8px;
     display: inline-block;
 }
 .exam-link-teacher-main .exam-info .subject-name{
+    width: 180px;
     color: var(--link-color);
-    width: 175px;
 }
+.exam-link-teacher-main .exam-info .subject-duration{
+    width:55px;
+}
+.exam-link-teacher-main .exam-info .article-question{
+    width: 130px;
+    color: var(--link-color);
+}
+.exam-link-teacher-main .exam-info .article-question:hover,
 .exam-link-teacher-main .exam-info a.subject-name:hover{color: var(--nav-hover-color);}
 .exam-link-teacher-main i{
     transition: 0.45s ease;
