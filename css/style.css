@@ -770,24 +770,24 @@ input[type=checkbox]{/** this for select all*/
 /*************************************/
 
 /**** Start Add Teacher ****/
-.teacher-name,
-.teacher-email,
-.teacher-password,
-.collage-name,
-.university-name,
-.teacher-phone{
+.modal-body .teacher-name,
+.modal-body .teacher-email,
+.modal-body .teacher-password,
+.modal-body .collage-name,
+.modal-body .university-name,
+.modal-body .teacher-phone{
     margin-left: 10px;
     margin-bottom: 10px;
     border:0;
     border-bottom: 1px solid var(--border-color);
     transition: 0.4s ease;
 }
-.teacher-name:focus,
-.teacher-email:focus,
-.teacher-password:focus,
-.collage-name:focus,
-.university-name:focus,
-.teacher-phone:focus{
+.modal-body .teacher-name:focus,
+.modal-body .teacher-email:focus,
+.modal-body .teacher-password:focus,
+.modal-body .collage-name:focus,
+.modal-body .university-name:focus,
+.modal-body .teacher-phone:focus{
     border:0;
     border-bottom: 1px solid var(--nav-hover-color);
     outline: 0 none;
