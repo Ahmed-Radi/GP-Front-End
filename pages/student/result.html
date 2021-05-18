@@ -46,15 +46,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Profile</a>
                     </li>
-                    <li class="nav-item">
-                        <span class="nav-switch" href="#">
-                            <span class="language" id="eg">EG</span>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                            <span  class="language" id="ar">AR</span>
-                        </span>
+                    <li class="nav-item dropdown">
+                        <!-- use "javascript:void(0)" to make link do nnothing at all -->
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            Languages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><img src="../../img/flags/Egypt-Flag.png" alt="AR Flag" srcset=""> Arabic</a>
+                            <a class="dropdown-item" href="#"><img src="../../img/flags/United-States-Flag.png" alt="En Flag" srcset=""> English</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">sing out</a>
