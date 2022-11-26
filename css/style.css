@@ -14,6 +14,10 @@
     /*navbar*/
     --section-background: #FBFCFD;
     --white-text-color: #FBFCFD;
+    /*buttons*/
+    --button-color:#3D37F1;
+    --button-text-color: #FBFCFD;
+    --button-hover: #2A85C9;
     /*Footer*/
     --footer-color: #4B647E;
     --shadow-color: #0000003d;
@@ -281,9 +285,7 @@ input:checked + .slider:before{
 a.exam-info{display: block;color: var(--nav-text-color);}
 .exam-main .exam-info{
     width: 100%;
-    margin-top: 56px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 56px auto 0 auto;
     padding: 20px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -359,6 +361,63 @@ a.exam-info{display: block;color: var(--nav-text-color);}
 }
 .last:last-child{margin-bottom: 100px;}/*this Shared between each of the course pages for the student and the teacher */
 /****Student result Page****/
+
+/*************************************/
+
+/****Student Questions Page****/
+.question-container{padding-top: 90px;width: 100%;}
+.question-body{
+    max-height: 60vh;
+    width: 100%;
+    /* margin: 56px auto 0 auto; */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--main-font);
+    font-weight: bolder;
+    transition: 0.25s ease;
+}
+.question-body .question{
+    min-height: 40px;
+}
+.question-body .question p {
+    margin: 0;
+    margin-top:10px;
+    font-size: 22px;
+}
+.question-number{
+    width: 98%;
+}
+.question-number .numbers{
+    width: 80%;
+    height: 50px;
+    margin: 0 10px;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+.numbers a{
+    width: 40px;
+    margin: 0 0.25%;
+    display: inline-block;
+    zoom: 1;
+    padding: 10px;
+    background: var(--white-text-color);
+}
+.next,
+.pre{
+    height: 40px;
+    width: 80px;
+    padding: 5px;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 30px;
+}
+/****Student Questions Page****/
 
 /*************************************/
 
